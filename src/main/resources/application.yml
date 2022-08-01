@@ -1,0 +1,61 @@
+
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+    com:
+      zaxxer:
+        hikari:
+          HikariConfig: 'DEBUG'
+          nodeValue: TRACE
+server:
+  port: 8082
+  error:
+    include-message: always
+  servlet:
+    encoding:
+      charset: UTF-8
+      force-response: true
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  main:
+    allow-circular-references: true
+  datasource:
+    username: quiuzexdrdccwx
+    password: 1bd7d9797bd862e1dd15f6d65f41dc929ab81c2bf9513e218f9f3cc2dd8801b0
+    hikari:
+      connection-timeout: 40000
+      idle-timeout:  30000
+      keepalive-time:  90000
+      max-lifetime:  100000
+      minimum-idle: 5
+      maximum-pool-size: 50
+      pool-name: core
+    url: jdbc:postgresql://ec2-100-26-39-41.compute-1.amazonaws.com/d9a3tq071sa98m
+  jackson:
+    date-format: dd/MM/yyyy
+    locale: pt_br
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: Brazil/East
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format-sql: true
+        show-sql: false
+        type: 'trace'
+        use-sql-comments: true
+        enable-lazy-load-no-trans: true
+    show-sql: false
+  sql:
+    init:
+      platform: postgres
+  application:
+    name: core
