@@ -15,6 +15,7 @@
     <description>viculaMedico</description>
     <properties>
         <java.version>11</java.version>
+        <target>11</target>
     </properties>
     <dependencies>
         <dependency>
