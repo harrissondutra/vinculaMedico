@@ -31,4 +31,8 @@ public class EstabelecimentoService {
         estabelecimentoRepository.save(estabelecimento);
     }
 
+    public Iterable<Estabelecimento> findAllById(Long id) {
+        return estabelecimentoRepository.findAllById(id);
+    }
+
 }

@@ -39,6 +39,4 @@ public class ProfissionalEstabelecimentoService {
         return profissionalEstabelecimentoRepository.findAllByEstabelecimento_Id(id);
     }
 
-
-
 }

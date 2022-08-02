@@ -26,6 +26,11 @@ public class EstabelecimentoController {
         return getService().getById(id);
     }
 
+    @GetMapping("/{id}")
+    public Iterable<Estabelecimento> findAllById(@PathVariable Long id) {
+        return getService().findAllById(id);
+    }
+
     @PostMapping
     public void save(@RequestBody Estabelecimento estabelecimento) {
         getService().save(estabelecimento);
