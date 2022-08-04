@@ -10,4 +10,6 @@ public interface ProfissionalEstabelecimentoRepository extends JpaRepository<Pro
 
     List<ProfissionalEstabelecimento> findAllByEstabelecimento_Id(Long id);
 
+
+
 }

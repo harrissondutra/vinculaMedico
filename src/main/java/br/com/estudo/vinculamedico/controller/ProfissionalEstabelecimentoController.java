@@ -33,7 +33,7 @@ public class ProfissionalEstabelecimentoController {
     }
 
     @GetMapping("/profissional/{id}")
-    public Iterable<ProfissionalEstabelecimento> findAllByProfissional_Id(@PathVariable Long id) {
+    public Iterable<ProfissionalEstabelecimento> findAllEstabelecimentoByProfissionalId(@PathVariable Long id) {
         return profissionalEstabelecimentoService.findAllByProfissional_Id(id);
     }
 
@@ -41,4 +41,6 @@ public class ProfissionalEstabelecimentoController {
     public Iterable<ProfissionalEstabelecimento> findAllByEstabelecimento_Id(@PathVariable Long id) {
         return profissionalEstabelecimentoService.findAllByEstabelecimento_Id(id);
     }
+
+
 }

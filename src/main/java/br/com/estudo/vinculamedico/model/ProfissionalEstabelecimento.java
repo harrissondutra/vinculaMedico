@@ -1,5 +1,7 @@
 package br.com.estudo.vinculamedico.model;
 
+import br.com.estudo.vinculamedico.serialize.ProfissionalSerializer;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +22,7 @@ public class ProfissionalEstabelecimento {
     private Long id;
 
     @ManyToOne
+    @JsonSerialize(using = ProfissionalSerializer.class)
     @JoinColumn(name = "profissional_id")
     private Profissional profissional;
 
