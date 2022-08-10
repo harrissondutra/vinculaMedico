@@ -1,7 +1,8 @@
 package br.com.estudo.vinculamedico.model;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -13,6 +14,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ApiIgnore
 @Table(name = "profissional")
 public class Profissional {
     @Id
@@ -32,7 +34,6 @@ public class Profissional {
     private String telefone;
 
     private String funcao;
-
 
 
 }

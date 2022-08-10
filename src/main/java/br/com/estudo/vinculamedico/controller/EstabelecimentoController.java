@@ -21,7 +21,7 @@ public class EstabelecimentoController {
         return getService().getAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/findById/{id}")
     public Estabelecimento getById(@PathVariable Long id) {
         return getService().getById(id);
     }

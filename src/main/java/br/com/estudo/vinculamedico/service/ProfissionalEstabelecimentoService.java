@@ -19,7 +19,7 @@ public class ProfissionalEstabelecimentoService {
         profissionalEstabelecimentoRepository.delete(profissionalEstabelecimento);
     }
 
-    public ProfissionalEstabelecimento update(ProfissionalEstabelecimento profissionalEstabelecimento) {
+    public ProfissionalEstabelecimento update(Long id, ProfissionalEstabelecimento profissionalEstabelecimento) {
         return profissionalEstabelecimentoRepository.save(profissionalEstabelecimento);
     }
 

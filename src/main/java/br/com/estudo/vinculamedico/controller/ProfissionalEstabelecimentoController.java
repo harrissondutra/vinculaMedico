@@ -27,6 +27,11 @@ public class ProfissionalEstabelecimentoController {
         profissionalEstabelecimentoService.save(profissionalEstabelecimento);
     }
 
+    @PutMapping("{id}")
+    public void update(@PathVariable Long id, @RequestBody ProfissionalEstabelecimento profissionalEstabelecimento) {
+        profissionalEstabelecimentoService.update(id, profissionalEstabelecimento);
+    }
+
     @DeleteMapping("{id}")
     public void delete(@PathVariable Long id, @RequestBody ProfissionalEstabelecimento profissionalEstabelecimento) {
         profissionalEstabelecimentoService.delete(id, profissionalEstabelecimento);
