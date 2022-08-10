@@ -13,10 +13,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>viculaMedico</name>
     <description>viculaMedico</description>
-    <properties>
-        <java.version>11</java.version>
-        <target>11</target>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -107,9 +103,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
                 <configuration>
-                    <release>11</release>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 
